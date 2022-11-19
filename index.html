@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-Report</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">  
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/logo.jpg" style="height:60px; width:80px; border-radius:10px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.who.int/health-topics/coronavirus#tab=tab_1">COVID</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.who.int/data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.who.int/news-room/headlines">NewsRoom</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>COVID REPORT</h1>
+    <form>
+      <label>Choose the Country : </label>
+      <select id="mySelect" class="form-control form-control-sm">
+        <option value="" hidden>Country</option>
+        <option value="Albania">Albania</option>
+        <option value="Australia">Australia</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="Fiji">Fiji</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Korea (North)">Korea (North)</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Libya">Libya</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Nepal">Nepal</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Poland">Poland</option>
+        <option value="Russian Federation">Russian Federation</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Turkey">Turkey</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States of America">United States of America</option>
+        <option value="Viet Nam">Viet Nam</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+      </select><br>
+      <button type="button" onclick="gen()" id="submit" class="btn btn-outline-info btn-sm" data-toggle="tooltip" data-placement="right" title="Search for a country">Info  </button>
+      <br><br><br>
+    </form>
+    <div id="result">
+      <h4 style="display:inline;">COVID-19</h4> pandemic, also known as the coronavirus pandemic, is an ongoing pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). It was first identified in December 2019 in Wuhan, China. <br>
+      <br> <h4>Symptoms:</h4> Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19: Cough, shortness of breath or difficulty breathing, fever, chills, muscle pain, sore throat, new loss of taste or smell. <br>
+      <br> <h4>Incubation period:</h4> The median incubation period for COVID-19 is four to five days. Most symptomatic people experience symptoms within two to seven days after <br>
+      <br> <h4>Mode of transmission:</h4> Human-to-human transmission via respiratory droplets <br>
+      <br> <h4>Prevention tips:</h4> Avoiding close contact with sick individuals; frequently washing hands with soap and water; not touching the eyes, nose, or mouth with unwashed hands; and practicing good respiratory hygiene <br>
+    </div>
+    <div id="out">
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <p id="p3"></p>
+      <p id="p4"></p>
+      <p id="p5"></p>
+      <p id="p6"></p>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
